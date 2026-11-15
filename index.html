@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - LifeOne 365</title>
+  <style>
+    :root {
+      --bg: #0e0e10;
+      --card-bg: #18181b;
+      --text-primary: #f4f4f5;
+      --text-secondary: #a1a1aa;
+      --accent: #10b981;
+      --border: #27272a;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f4f4f2;
+        --card-bg: #ffffff;
+        --text-primary: #18181b;
+        --text-secondary: #71717a;
+        --accent: #059669;
+        --border: #e4e4e7;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(16, 185, 129, 0.12);
+      padding: 3px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .meta {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-top: 6px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 28px 0 12px;
+      color: var(--text-primary);
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 16px 0 8px;
+    }
+    p {
+      margin-bottom: 14px;
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+    strong {
+      color: var(--text-primary);
+    }
+    ul {
+      margin: 8px 0 16px 22px;
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--text-primary);
+    }
+    .card-highlight {
+      background: var(--bg);
+      border-left: 3px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 18px 0;
+    }
+    .card-highlight p {
+      margin: 0;
+      color: var(--text-primary);
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>LifeOne 365 <span class="badge">Privacy First</span></h1>
+      <div class="meta">Privacy Policy · Last updated: November 15, 2026</div>
+    </header>
+
+    <p>
+      <strong>LifeOne 365</strong> (<code>app.lifeone365.journal</code>) is a minimalist annual journal and year-progress visualizer for Android. Your privacy and personal memories are of utmost importance. This Privacy Policy describes how the app handles your information.
+    </p>
+
+    <div class="card-highlight">
+      <p><strong>Summary:</strong> LifeOne 365 is 100% offline. We do not require accounts, we do not track you, and we do not operate remote servers to store or view your journal entries or photos.</p>
+    </div>
+
+    <h2>1. 100% Offline &amp; Private by Design</h2>
+    <ul>
+      <li><strong>No Account Required:</strong> You do not need to register, provide an email address, or log in to use the app.</li>
+      <li><strong>No Analytics or Trackers:</strong> The app does not include any third-party telemetry, behavioral analytics SDKs, advertising frameworks, or tracking cookies.</li>
+      <li><strong>No Cloud Backend:</strong> We do not operate remote databases or cloud servers to store your memories, notes, photos, or locations.</li>
+    </ul>
+
+    <h2>2. Data Collection and Usage</h2>
+    <p>All data processed by LifeOne 365 remains strictly on your device:</p>
+
+    <h3>A. Notes, Photos &amp; Stickers</h3>
+    <p>
+      Text, stickers, and photos added to your day canvas are stored in the app's private internal storage directory (<code>context.filesDir</code>).
+    </p>
+    <p>
+      Photo picking is conducted solely via Android’s modern System Photo Picker (<code>PickVisualMedia</code>). The app does <strong>not</strong> request broad storage permissions (<code>READ_MEDIA_IMAGES</code> or <code>READ_EXTERNAL_STORAGE</code>) and only accesses images you explicitly select.
+    </p>
+
+    <h3>B. Approximate Location (Optional)</h3>
+    <ul>
+      <li><strong>Permission:</strong> <code>android.permission.ACCESS_COARSE_LOCATION</code></li>
+      <li><strong>Usage:</strong> Only when you explicitly tap the "Add Location" tool on a day canvas. The app fetches the current approximate city/locality name to create a location card.</li>
+      <li><strong>Storage:</strong> Coordinates are saved strictly into your device's local database. Background location tracking is never used.</li>
+      <li><strong>Google Static Maps:</strong> If an optional Google Static Maps API key is configured, coordinate values are transmitted over HTTPS to Google Static Maps solely to render the preview snapshot.</li>
+    </ul>
+
+    <h3>C. Background Tasks &amp; Widgets</h3>
+    <ul>
+      <li><strong>Permission:</strong> <code>android.permission.RECEIVE_BOOT_COMPLETED</code></li>
+      <li><strong>Usage:</strong> Used by Android WorkManager and Broadcast Receivers to re-schedule midnight widget updates after a device reboot or timezone change. No user data is transferred.</li>
+    </ul>
+
+    <h2>3. Data Storage &amp; Manual Backups</h2>
+    <p>
+      Your data is stored locally in an encrypted/sandboxed SQLite database via Android Room.
+    </p>
+    <p>
+      LifeOne 365 provides an explicit <strong>Export / Import Backup</strong> feature. When triggered, a <code>.zip</code> file containing your journal database and photos is saved to or restored from a folder chosen by you using Android's Storage Access Framework. You retain complete ownership and control over your backup files.
+    </p>
+
+    <h2>4. Children’s Privacy</h2>
+    <p>
+      LifeOne 365 does not collect any personal data from anyone, including children under the age of 13.
+    </p>
+
+    <h2>5. Changes to This Policy</h2>
+    <p>
+      Any updates to this policy will be posted on this page with an updated revision date.
+    </p>
+
+    <h2>6. Contact Us</h2>
+    <p>
+      If you have questions about this policy or the app, please submit an issue on GitHub:
+    </p>
+    <p>
+      <a href="https://github.com/firdavsy71/LifeOne_Claude" target="_blank" rel="noopener">https://github.com/firdavsy71/LifeOne_Claude</a>
+    </p>
+
+    <footer>
+      LifeOne 365 · 100% Offline · Private &amp; Open Source
+    </footer>
+  </main>
+</body>
+</html>
